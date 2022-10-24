@@ -20,7 +20,39 @@
       <p>Opret dig som medlem og få flere fordele og nyheder<br> I det øjeblik vi har dem. <br><br> Send gerne ris eller ros med når du melder dig ind, <br>vi er altid parate til dialog.</p>
     </div>
   </section>
-  <!----------------  Hero End  ---------------->
+<!----------------  Hero End  ---------------->
+
+<!----------------  Contact Start  ---------------->
+<form class="contact-container">
+  <div class="contact-txt">
+      <div class="first-contact-section">
+        <h1>Fulde navn</h1>
+          <input class="tlf contact-field-1"  type="tel" name="tlf" 
+                 required>
+        <h1>E-mail</h1>
+          <input class="email contact-field-2"  type="email" name="email" 
+                 required>
+                <h1>Ris og/eller ros</h1>
+          <textarea class="message contact-field-3" type="text" name="message" cols="50" rows="8"
+              ></textarea>
+          <button id="Contact-btn" onclick="timer(); remove()" value="submit" type="submit">Opret</button>
+          <div id="valid">
+            <section class="Valid-section">
+              <div class="Valid-wrap">
+                <h1>TAK!</h1>
+                <h1 class="nyt-medlem">Birthe Marie Hansen</h1>
+                <p>Vi er enormt glade for at få dig som medlem.</p>
+                <img src="/Kevin_Therkildsen_Smuknu/assets/products/product_2233009200.jpg" alt="">
+                <p>Vi er enormt glade for at få dig som medlem.</p>
+                <a href="index.html"><button class="btn">Til Forsiden</button></a>
+              </div>
+            </section>
+          </div>
+      </div>
+      </section>
+  </div>
+</form>
+<!---------------- Contact End  ---------------->
 
 <!----------------  Footer Start  ---------------->
 <div id="footer"></div>
@@ -31,5 +63,6 @@
 <script src="../js/index.js"></script>
 <script src="../js/components/navbar.js"></script>
 <script src="../js/components/footer.js"></script>
+<script src="../js/api/contactApi.js"></script>
 </body>
 </html>

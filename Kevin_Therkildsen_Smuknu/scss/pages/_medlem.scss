@@ -5,6 +5,7 @@
     height: 700px;
     @include cover-background;
     @include flex-center;
+    margin-bottom: -10px;
 
     .Bliv-Medlem-wrap{
         margin-top: 100px;
@@ -39,3 +40,155 @@
     
 }
 // Hero section end 
+
+// Contact section Start 
+.contact-section{
+    margin: 75px 30px;
+    text-align: center;
+    font-family: $font;
+    height: auto;
+    
+
+    h1{
+        font-size: 45px;
+        line-height: 53px;
+        font-weight: 400;
+        padding-bottom: 30px;
+     
+    }
+    p{
+        line-height: 22px;
+    }
+    
+}
+.contact-container {
+	height: auto;
+	font-family: $font;
+    font-weight: 400;
+    margin-top: 30px;
+    
+}
+.contact-txt {
+    display: flex;
+	justify-content: space-between;
+    justify-content: center;
+	margin: auto;
+    padding-bottom:70px ;
+
+    h1{
+        font-size: 20px;
+        color: #707070;
+        font-weight: 400;
+        padding: 27px 0 10px 0;
+    }
+    
+}
+.first-contact-section {
+	width: 90%;
+    @include flex-column;
+    
+}
+
+
+.contact-field-1 {
+    border: 1px solid #707070;
+    height: 40px;
+}
+.contact-field-2 {
+    border: 1px solid #707070;
+    height: 40px;
+}
+.contact-field-3 {
+    border: 1px solid #707070;  
+    height: 219px;
+    }
+ input, textarea{
+    color: black;
+    font-size: 16px;
+    font-family: $font;
+    padding: 10px;
+
+
+ }
+
+#valid {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    font-family: $font;
+	color: white;
+    height: 635px;
+    width: 50%;
+    left: 0;
+    background-color: #F7F0F2;
+}
+#Contact-btn{
+    margin-top: 30px;
+    width: 133px;
+    height: 40px;
+    background-color: $primary-color;
+    border: none;
+    color: $background;
+    border-radius: 30px;
+    font-family: $font;
+    font-size:$bodytext;
+    font-weight: 700;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+#Contact-btn:hover{
+    cursor: pointer;
+}
+
+
+@media (min-width: 1024px) {
+    .first-contact-section{
+        width: 50%;
+    }
+    #valid{
+        width: 50%;
+    }  
+}
+@media only screen and (min-width: 380px ) {
+    #valid{
+        width: 100%;
+    }
+}
+// Contact section End
+
+// Valid section Start
+.Valid-wrap{
+    transform: translateY(-6%);
+    text-align: center;
+    background-color: #f7f0f2;
+
+    h1{
+        font-size: $title;
+        font-family: $font;
+        color: $secondary-color;
+        font-weight: 700;
+    }
+    .nyt-medlem{
+        font-size: $bodytext;
+        color: $primary-color;
+        font-weight: 700;
+    }
+    p{
+        font-size: $bodytext;
+        font-family: $font;
+        color: $secondary-color;
+        font-weight: 400;
+        padding: 20px 50px 35px 50px;
+    }
+    img{
+        border: 5px solid #FA96AA;
+        border-radius: 75px;
+        width: 150px;
+        height: 150px;
+        
+    }
+   
+}
+// Valid section End

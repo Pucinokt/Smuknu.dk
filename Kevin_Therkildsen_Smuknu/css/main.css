@@ -329,6 +329,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: -10px;
 }
 .Bliv-Medlem .Bliv-Medlem-wrap {
   margin-top: 100px;
@@ -356,6 +357,146 @@ li {
     left: 30px;
   }
 }
+.contact-section {
+  margin: 75px 30px;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  height: auto;
+}
+.contact-section h1 {
+  font-size: 45px;
+  line-height: 53px;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+.contact-section p {
+  line-height: 22px;
+}
+
+.contact-container {
+  height: auto;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.contact-txt {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  margin: auto;
+  padding-bottom: 70px;
+}
+.contact-txt h1 {
+  font-size: 20px;
+  color: #707070;
+  font-weight: 400;
+  padding: 27px 0 10px 0;
+}
+
+.first-contact-section {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-field-1 {
+  border: 1px solid #707070;
+  height: 40px;
+}
+
+.contact-field-2 {
+  border: 1px solid #707070;
+  height: 40px;
+}
+
+.contact-field-3 {
+  border: 1px solid #707070;
+  height: 219px;
+}
+
+input, textarea {
+  color: black;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  padding: 10px;
+}
+
+#valid {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  height: 635px;
+  width: 50%;
+  left: 0;
+  background-color: #F7F0F2;
+}
+
+#Contact-btn {
+  margin-top: 30px;
+  width: 133px;
+  height: 40px;
+  background-color: #FA96AA;
+  border: none;
+  color: #fff;
+  border-radius: 30px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+}
+
+#Contact-btn:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .first-contact-section {
+    width: 50%;
+  }
+  #valid {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 380px) {
+  #valid {
+    width: 100%;
+  }
+}
+.Valid-wrap {
+  transform: translateY(-6%);
+  text-align: center;
+  background-color: #f7f0f2;
+}
+.Valid-wrap h1 {
+  font-size: 54px;
+  font-family: "Quicksand", sans-serif;
+  color: #000;
+  font-weight: 700;
+}
+.Valid-wrap .nyt-medlem {
+  font-size: 18px;
+  color: #FA96AA;
+  font-weight: 700;
+}
+.Valid-wrap p {
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  color: #000;
+  font-weight: 400;
+  padding: 20px 50px 35px 50px;
+}
+.Valid-wrap img {
+  border: 5px solid #FA96AA;
+  border-radius: 75px;
+  width: 150px;
+  height: 150px;
+}
+
 .Produkter {
   background-image: url(/Kevin_Therkildsen_Smuknu/assets/headers/products.jpg);
   height: 700px;
@@ -425,6 +566,32 @@ li {
     left: 30px;
   }
 }
+.Featured-Reviews {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  color: #707070;
+  margin: 60px 30px;
+}
+.Featured-Reviews img {
+  border: 10px solid #FA96AA;
+  border-radius: 75px;
+  width: 150px;
+  height: 150px;
+  margin: 57px;
+}
+.Featured-Reviews h1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.Featured-Reviews p {
+  font-size: 20px;
+  font-weight: 400;
+}
+.Featured-Reviews hr {
+  margin-top: 30px;
+  color: #FA96AA;
+}
+
 .wrap-Reviews {
   text-align: center;
   margin-top: 60px;
@@ -439,4 +606,8 @@ li {
   font-family: "Quicksand", sans-serif;
   color: #FA96AA;
   font-weight: 700;
+}
+.wrap-Reviews img {
+  border: 10px solid #FA96AA;
+  border-radius: 75px;
 }/*# sourceMappingURL=main.css.map */
