@@ -223,8 +223,24 @@ li {
   padding: 20px 50px 35px 50px;
 }
 
+.Featured-wrap {
+  text-align: center;
+  margin: 60px 0;
+}
+.Featured-wrap h1 {
+  font-size: 54px;
+  font-family: "Quicksand", sans-serif;
+  color: #000;
+}
+.Featured-wrap p {
+  font-size: 54px;
+  font-family: "Quicksand", sans-serif;
+  color: #FA96AA;
+  font-weight: 700;
+}
+
 .Sundhed {
-  background-image: url(/assets/headers/abouthealth.jpg);
+  background-image: url(/Kevin_Therkildsen_Smuknu/assets/headers/abouthealth.jpg);
   height: 700px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -305,7 +321,7 @@ li {
 }
 
 .Bliv-Medlem {
-  background-image: url(/assets/headers/subscribers.jpg);
+  background-image: url(/Kevin_Therkildsen_Smuknu/assets/headers/subscribers.jpg);
   height: 700px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -340,8 +356,43 @@ li {
     left: 30px;
   }
 }
+.Produkter {
+  background-image: url(/Kevin_Therkildsen_Smuknu/assets/headers/products.jpg);
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Produkter .Produkter-wrap {
+  margin-top: 100px;
+  color: #fff;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 60px;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+.Produkter .Produkter-wrap h1 {
+  font-size: 54px;
+  font-weight: 700;
+}
+.Produkter .Produkter-wrap p {
+  font-size: 18px;
+  line-height: 23px;
+  padding: 20px;
+}
+
+@media (min-width: 1024px) {
+  .Produkter-wrap {
+    position: absolute;
+    left: 30px;
+  }
+}
 .hero {
-  background-image: url(/assets/headers/front.jpg);
+  background-image: url(/Kevin_Therkildsen_Smuknu/assets/headers/front.jpg);
   height: 700px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -374,22 +425,6 @@ li {
     left: 30px;
   }
 }
-.Featured-wrap {
-  text-align: center;
-  margin-top: 60px;
-}
-.Featured-wrap h1 {
-  font-size: 54px;
-  font-family: "Quicksand", sans-serif;
-  color: #000;
-}
-.Featured-wrap p {
-  font-size: 54px;
-  font-family: "Quicksand", sans-serif;
-  color: #FA96AA;
-  font-weight: 700;
-}
-
 .wrap-Reviews {
   text-align: center;
   margin-top: 60px;

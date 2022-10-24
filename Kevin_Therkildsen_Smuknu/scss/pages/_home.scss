@@ -1,7 +1,7 @@
 // Hero section start 
 
 .hero{
-    background-image: url(/assets/headers/front.jpg);
+    background-image: url(/Kevin_Therkildsen_Smuknu/assets/headers/front.jpg);
     height: 700px;
     @include cover-background;
     @include flex-center;
@@ -38,24 +38,6 @@
 }
 // Hero section end 
 
-// Featured Products Start
-.Featured-wrap{
-    text-align: center;
-    margin-top: 60px;
-
-    h1{
-        font-size: $title;
-        font-family: $font;
-        color: $secondary-color;
-    }
-    p{
-        font-size: $title;
-        font-family: $font;
-        color: $primary-color;
-        font-weight: 700;
-    }
-}
-// Featured Products End
 
 
 

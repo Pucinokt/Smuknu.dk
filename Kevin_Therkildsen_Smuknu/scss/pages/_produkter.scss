@@ -1,0 +1,40 @@
+// Hero section start 
+
+.Produkter{
+    background-image: url(/Kevin_Therkildsen_Smuknu/assets/headers/products.jpg);
+    height: 700px;
+    @include cover-background;
+    @include flex-center;
+
+    .Produkter-wrap{
+        margin-top: 100px;
+        color: $background;
+        height: auto;
+        background-color: #000000CC;
+        padding: 60px;
+        font-family:$font;
+        text-align: center;
+    
+
+        h1{
+            font-size: 54px;
+            font-weight: 700;
+        }
+
+        p{
+            font-size: $bodytext;
+            line-height: 23px;
+            padding: 20px;
+        } 
+        
+    }
+}
+
+@media (min-width: 1024px) {
+    .Produkter-wrap{
+        position: absolute;
+        left: 30px;
+    }
+    
+}
+// Hero section end 

@@ -16,8 +16,10 @@
 @import "layout/footer";
 @import "layout/navbar";
 @import "layout/medlem";
+@import "layout/featured_products";
 
 // pages
-@import "pages/spoerg_om_sundhed";
-@import "pages/bliv_medlem";
+@import "pages/sundhed";
+@import "pages/medlem";
+@import "pages/produkter";
 @import "pages/home";
