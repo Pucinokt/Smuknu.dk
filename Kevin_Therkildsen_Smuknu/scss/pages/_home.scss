@@ -1,0 +1,88 @@
+// Hero section start 
+
+.hero{
+    background-image: url(/assets/headers/front.jpg);
+    height: 700px;
+    @include cover-background;
+    @include flex-center;
+
+    .hero-wrap{
+        margin-top: 100px;
+        height: auto;
+        background-color: #F7F0F2;
+        padding: 60px;
+        font-family:$font;
+        text-align: center;
+    
+
+        h1{
+            font-size: 54px;
+            font-weight: 700;
+        }
+
+        p{
+            font-size: 16px;
+            line-height: 23px;
+            padding: 20px;
+        } 
+        
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-wrap{
+        position: absolute;
+        left: 30px;
+    }
+    
+}
+// Hero section end 
+
+// Featured Products Start
+.Featured-wrap{
+    text-align: center;
+    margin-top: 60px;
+
+    h1{
+        font-size: $title;
+        font-family: $font;
+        color: $secondary-color;
+    }
+    p{
+        font-size: $title;
+        font-family: $font;
+        color: $primary-color;
+        font-weight: 700;
+    }
+}
+// Featured Products End
+
+
+
+
+
+
+
+
+
+
+// Reviews Start
+.wrap-Reviews{
+    text-align: center;
+    margin-top: 60px;
+
+    h1{
+        font-size: $title;
+        font-family: $font;
+        color: $secondary-color;
+    }
+    p{
+        font-size: $title;
+        font-family: $font;
+        color: $primary-color;
+        font-weight: 700;
+    }
+}
+// Reviews End
+
+

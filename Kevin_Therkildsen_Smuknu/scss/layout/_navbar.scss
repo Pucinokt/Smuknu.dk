@@ -1,0 +1,131 @@
+/* ------------ Navbar Start ---------- */
+/* ------------ Baggrund på scroll nav Start ---------- */
+/* ------------ Baggrund på scroll nav End ---------- */
+/* ------------ Dropdown Start ---------- */
+/* ------------ Dropdown End ---------- */
+/* ------------  nav mobile Start ---------- */
+/* ------------  nav mobile end ---------- */
+/* ------------ Knapper style Start ---------- */
+/* ------------ Knapper style End ---------- */
+/* ------------ Navbar End ---------- */
+
+.Logo {
+	width: 148px;
+	height: auto;
+	z-index: 999;
+	position: relative;
+}
+
+header {
+	background-color: $background;
+	width: 100%;
+ }
+#nav {
+	background-color: $background;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	box-shadow: 0px 3px 6px #00000029;
+
+}
+.nav-container {
+	margin-inline: auto;
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 30px;
+	margin-left: 30px;
+	height: 80px;
+}
+
+nav {
+	ul {
+		list-style: none;
+		display: flex;
+		font-size: $bodytext;
+		font-family: $font;
+		position: relative;
+	}
+	border-bottom: 2px solid transparent;
+	padding-bottom: 0.5em;
+	transition: all 200ms ease;
+	cursor: pointer;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+	color: black;
+	text-decoration: none;
+	&:hover {
+		color: $primary-color;
+	}
+
+	
+}
+ul {
+	display: flex;
+	text-align: right;
+	font-family: $title;
+	font-weight: 700;
+	display: flex;
+	
+}
+li {
+	padding: 15px;
+	list-style: none;
+	
+}
+#burger, .icon{
+	display: none;
+}
+
+@media (max-width: 1024px) {
+	#burger {
+		box-sizing: initial;
+		display: block;
+		width: 29px;
+		height: 26px;
+		fill: #FA96AA;
+		cursor: pointer;
+		z-index: 2;
+		margin-bottom: 0.5em;
+		&:focus {
+			border: none;
+			outline: none;
+		}
+	}
+	nav {
+		position: absolute;
+		right: 0;
+		top: 80px;
+		background: #000000E6;
+		min-width: 100%;
+		clip-path: circle(0% at 100% 0);
+		border-radius: 0 0 15px 15px;
+		transition: all 500ms ease-in-out;
+		ul {
+			flex-direction: column;
+		}
+		
+	}
+	nav.show {
+		clip-path: circle(200% at 100% 0);
+		transition-duration: 300ms;
+	}
+	.nav-container{
+		margin: 0;
+		padding-right: 13px;
+		padding-left: 13px;
+
+	}
+	.icon{
+		display: block;	
+		color: $Social-media;
+		width: 27px;
+		height: 27px;
+	}
+	a{
+		color: white;
+	}
+}

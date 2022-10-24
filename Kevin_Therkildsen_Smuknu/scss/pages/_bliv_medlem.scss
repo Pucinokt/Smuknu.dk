@@ -1,0 +1,41 @@
+/// Hero section start 
+
+.Bliv-Medlem{
+    background-image: url(/assets/headers/subscribers.jpg);
+    height: 700px;
+    @include cover-background;
+    @include flex-center;
+
+    .Bliv-Medlem-wrap{
+        margin-top: 100px;
+        height: auto;
+        background-color: $background;
+        padding: 30px;
+        font-family:$font;
+        text-align: center;
+        color: $primary-color;
+    
+
+        h1{
+            font-size: $title;
+            font-weight: 700;
+        }
+
+        p{
+            font-size: $bodytext;
+            line-height: 23px;
+            padding: 20px;
+            color: $secondary-color;
+        } 
+        
+    }
+}
+
+@media (min-width: 1024px) {
+    .Bliv-Medlem-wrap{
+        position: absolute;
+        left: 30px;
+    }
+    
+}
+// Hero section end 
