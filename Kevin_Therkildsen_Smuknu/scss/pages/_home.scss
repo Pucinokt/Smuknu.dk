@@ -13,7 +13,6 @@
         padding: 60px;
         font-family:$font;
         text-align: center;
-    
 
         h1{
             font-size: 54px;
@@ -38,15 +37,10 @@
 }
 // Hero section end 
 
+// Featured product section Start 
 
 
-
-
-
-
-
-
-
+// Featured product section End
 
 // Reviews Start
 .Featured-Reviews{
@@ -74,6 +68,10 @@
         color: $primary-color;
     }
 }
+.r-line{
+        margin: -30px 30px 30px 30px;
+        color: $primary-color;
+}
 .wrap-Reviews{
     text-align: center;
     margin-top: 60px;
@@ -93,12 +91,64 @@
         border-radius: 75px;
     }
 }
-// Reviews End
-@media only screen and (min-width: 728px ) {
-    .featured-Reviews{
-        
-       
+
+
+@media only screen and (min-width: 728px) and (max-width: 1024px) {
+
+// reviews1
+    .review1{
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+
     }
+    .review-heading{
+        position: absolute;
+        left: 90px;
+        align-self: flex-end;
+    }
+    .review-txt{
+        text-align: left;
+        margin-top: 40px;
+    }
+    
+// reviews2
+    .review2{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 30px;
+    }
+    .review-heading-2{
+        position: absolute;
+        right: 70px;
+        align-self: flex-end;
+    }
+    .review-txt-2{
+        text-align: left;
+        margin-top: 40px;
+    }
+    .Featured-Reviews{
+        .wrap-Reviews{
+            h1{
+                font-size: 65px;
+                color:$primary-color ;
+            }
+            p{
+                color: $secondary-color;
+                font-size: 65px;
+    
+            }
+        }
+    }
+        .r-line,hr{
+        display: none;
+        }
+    
+    
+    
 }
+
+// Reviews End
+
 
 

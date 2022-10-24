@@ -17,4 +17,29 @@
         padding: 20px 50px 35px 50px;
     }
 }
+.Medlem{
+    display: flex;
+}
+.Medlem-wrap{
+    width: 100%;
+}
+.medlem-imgs{
+    background-color: #F7F0F2;
+    padding: 20px;
+    
+    img{
+        padding: 5px;
+    }
+}
+@media only screen and  (min-width: 1024px) {
+    .medlem-imgs{
+        display: none;
+    }
+}
+@media only screen and (max-width: 728px ) {
+    .medlem-imgs{
+        display: none;
+    }
+}
 // Medlem End
+
