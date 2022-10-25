@@ -1,4 +1,4 @@
-// Featured Products Start
+/* ------------ Featured Products Start ---------- */
 .Featured-wrap{
     text-align: center;
     margin: 60px 0;
@@ -15,4 +15,48 @@
         font-weight: 700;
     }
 }
-// Featured Products End
+
+/* ------------  Product List Start ---------- */
+#product-list,#Products{
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Products{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 3px 6px #00000029;
+    max-width: 300px;
+}
+.Products-image{
+    border-radius: 15px 15px 0px 0px;
+}
+.Product-Discount{
+    position: absolute;
+    display: flex;
+    align-self: flex-end;
+    width: 100px;
+    height: 60px;
+    background-color: $primary-color;
+}
+.Products-details{
+    padding: 20px;
+    border-top: 2px solid $primary-color;
+
+    h3{
+        font-size: 22px;
+        font-family: $font;
+        font-weight: 400;
+    }
+    p{
+        font-family: $font;
+        font-size: $bodytext;
+        font-weight: 700;
+        
+    }
+}
+/* ------------  Product List End ---------- */
+/* ------------ Featured Products End ---------- */

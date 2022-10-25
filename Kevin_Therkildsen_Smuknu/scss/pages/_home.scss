@@ -1,5 +1,4 @@
-// Hero section start 
-
+/* ------------ Home Hero Start ---------- */
 .hero{
     background-image: url(/Kevin_Therkildsen_Smuknu/assets/headers/front.jpg);
     height: 700px;
@@ -27,22 +26,18 @@
         
     }
 }
-
+/* ------------ Home Hero Media Queries Start ---------- */
 @media (min-width: 1024px) {
     .hero-wrap{
         position: absolute;
         left: 30px;
-    }
-    
+    }  
 }
-// Hero section end 
+/* ------------ Home Hero Media Queries End ---------- */
+/* ------------ Home Hero End ---------- */
 
-// Featured product section Start 
 
-
-// Featured product section End
-
-// Reviews Start
+/* ------------ Reviews Start ---------- */
 .Featured-Reviews{
         text-align: center;
         font-family: $font;
@@ -68,10 +63,14 @@
         color: $primary-color;
     }
 }
+
+
 .r-line{
         margin: -30px 30px 30px 30px;
         color: $primary-color;
 }
+
+
 .wrap-Reviews{
     text-align: center;
     margin-top: 60px;
@@ -92,9 +91,8 @@
     }
 }
 
-
+/* ------------ Reviews Media Queries Start ---------- */
 @media only screen and (min-width: 728px) and (max-width: 1024px) {
-
 // reviews1
     .review1{
         display: flex;
@@ -127,28 +125,27 @@
         text-align: left;
         margin-top: 40px;
     }
-    .Featured-Reviews{
-        .wrap-Reviews{
+
+
+.Featured-Reviews{
+    .wrap-Reviews{
             h1{
-                font-size: 65px;
-                color:$primary-color ;
+              font-size: 65px;
+              color:$primary-color ;
             }
             p{
-                color: $secondary-color;
-                font-size: 65px;
+              color: $secondary-color;
+              font-size: 65px;
     
             }
         }
     }
         .r-line,hr{
         display: none;
-        }
-    
-    
-    
+        }  
 }
-
-// Reviews End
+/* ------------ Reviews Media Queries End ---------- */
+/* ------------ Reviews End ---------- */
 
 
 

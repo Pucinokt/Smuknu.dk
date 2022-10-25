@@ -6,50 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/main.css">
-    <title>Bliv medlem</title>
+    <link rel="icon" type="image/x-icon" href="/Kevin_Therkildsen_Smuknu/assets/logo/smuknu_fav.ico">
+    <title>Smuknu - Bliv medlem</title>
 </head>
 <body>
+  
 <!----------------  Navbar Start  ---------------->
 <div id="navbar"></div>
 <!---------------- Navbar End  ---------------->
 
 <!----------------  Hero Start  ---------------->
 <section class="Bliv-Medlem">
+
     <div class="Bliv-Medlem-wrap">
       <h1>BLIV MEDLEM</h1>
       <p>Opret dig som medlem og få flere fordele og nyheder<br> I det øjeblik vi har dem. <br><br> Send gerne ris eller ros med når du melder dig ind, <br>vi er altid parate til dialog.</p>
     </div>
-  </section>
+
+</section>
 <!----------------  Hero End  ---------------->
 
 <!----------------  Contact Start  ---------------->
 <form class="contact-container">
   <div class="contact-txt">
-      <div class="first-contact-section">
+      <div class="contact-box">
         <h1>Fulde navn</h1>
           <input class="text contact-field-1"  type="text" name="name" 
                  required>
-        <h1>E-mail</h1>
+                  <h1>E-mail</h1>
+
           <input class="email contact-field-2"  type="email" name="email" 
                  required>
-                <h1>Ris og/eller ros</h1>
-          <textarea class="message contact-field-3" type="text" name="message" cols="50" rows="8"
-              ></textarea>
+                  <h1>Ris og/eller ros</h1>
+                  
+          <textarea class="message contact-field-3" type="text" name="message" cols="50" rows="8">
+          </textarea>
           <button id="Contact-btn" onclick="timer(); remove()" value="submit" type="submit">Opret</button>
+
+          <!-- Valid Start -->
           <div id="valid">
             <section class="Valid-section">
               <div class="Valid-wrap">
                 <h1>TAK!</h1>
-                <h1 class="nyt-medlem">Birthe Marie Hansen</h1>
-                <p>Vi er enormt glade for at få dig som medlem.</p>
-                <img src="/Kevin_Therkildsen_Smuknu/assets/products/product_2233009200.jpg" alt="">
-                <p>Kig I din inbox vi har sendt en lille velkomst gave.</p>
-                <a href="index.html"><button class="btn">Til Forsiden</button></a>
+                  <h1 class="nyt-medlem">Birthe Marie Hansen</h1>
+                    <p>Vi er enormt glade for at få dig som medlem.</p>
+                    <img src="/Kevin_Therkildsen_Smuknu/assets/products/product_2233009200.jpg" alt="">
+                    <p>Kig I din inbox vi har sendt en lille velkomst gave.</p>
+                    <a href="index.html"><button class="btn">Til Forsiden</button></a>
               </div>
             </section>
           </div>
+          <!-- Valid End -->
+          
       </div>
-      </section>
   </div>
 </form>
 <!---------------- Contact End  ---------------->

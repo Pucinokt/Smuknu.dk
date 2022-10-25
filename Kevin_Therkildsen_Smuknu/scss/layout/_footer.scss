@@ -1,5 +1,4 @@
-
-
+/* ------------ Footer Start ---------- */
 .footer {
     width: 100%;
     background-color: #D9D9D9;
@@ -40,6 +39,8 @@
     
 }
 
+
+/* ------------ Media Queries Start ---------- */
 @media (min-width: 1024px) {
 
     .footer-wrap{
@@ -50,5 +51,6 @@
     .footer{
         font-size: 18px;
     }
-
 }
+/* ------------ Media Queries End ---------- */
+/* ------------ Footer End ---------- */

@@ -1,14 +1,4 @@
 /* ------------ Navbar Start ---------- */
-/* ------------ Baggrund på scroll nav Start ---------- */
-/* ------------ Baggrund på scroll nav End ---------- */
-/* ------------ Dropdown Start ---------- */
-/* ------------ Dropdown End ---------- */
-/* ------------  nav mobile Start ---------- */
-/* ------------  nav mobile end ---------- */
-/* ------------ Knapper style Start ---------- */
-/* ------------ Knapper style End ---------- */
-/* ------------ Navbar End ---------- */
-
 .Logo {
 	width: 148px;
 	height: auto;
@@ -48,7 +38,6 @@ nav {
 		position: relative;
 	}
 	border-bottom: 2px solid transparent;
-	padding-bottom: 0.5em;
 	transition: all 200ms ease;
 	cursor: pointer;
 }
@@ -80,6 +69,8 @@ li {
 	display: none;
 }
 
+
+/* ------------  Media Queries Start ---------- */
 @media (max-width: 1024px) {
 	#burger {
 		box-sizing: initial;
@@ -129,3 +120,5 @@ li {
 		color: white;
 	}
 }
+/* ------------  Media Queries End ---------- */
+/* ------------ Navbar End ---------- */

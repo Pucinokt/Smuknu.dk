@@ -1,5 +1,4 @@
-// Hero section start 
-
+/* ------------ Products Hero Start ---------- */
 .Produkter{
     background-image: url(/Kevin_Therkildsen_Smuknu/assets/headers/products.jpg);
     height: 700px;
@@ -29,12 +28,12 @@
         
     }
 }
-
+/* ------------ Products Hero Media Queries Start ---------- */
 @media (min-width: 1024px) {
     .Produkter-wrap{
         position: absolute;
         left: 30px;
     }
-    
 }
-// Hero section end 
+/* ------------ Products Hero Media Queries End ---------- */
+/* ------------ Products Hero End ---------- */
