@@ -74,6 +74,11 @@ body {
   .footer {
     font-size: 18px;
   }
+  .footer li {
+    font-size: 22px;
+    font-weight: 400;
+    padding: 5px;
+  }
 }
 /* ------------ Media Queries End ---------- */
 /* ------------ Footer End ---------- */
@@ -289,11 +294,27 @@ li {
 
 .Product-Discount {
   position: absolute;
+  clear: both;
+  margin: 10px;
+  border-radius: 15px;
   display: flex;
-  align-self: flex-end;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
   width: 100px;
   height: 60px;
   background-color: #FA96AA;
+}
+.Product-Discount h1 {
+  font-family: "Quicksand", sans-serif;
+  color: #F3EDED;
+  font-size: 18px;
+}
+.Product-Discount p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
 }
 
 .Products-details {
@@ -312,6 +333,14 @@ li {
 }
 
 /* ------------  Product List End ---------- */
+@media only screen and (min-width: 728px) and (max-width: 1024px) {
+  .Featured-Products .Featured-wrap h1 {
+    font-size: 65px;
+  }
+  .Featured-Products .Featured-wrap p {
+    font-size: 65px;
+  }
+}
 /* ------------ Featured Products End ---------- */
 /* ------------ Sundhed Hero Start ---------- */
 .Sundhed {
