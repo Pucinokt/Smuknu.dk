@@ -5,14 +5,19 @@ const onSubmit = (e) => {
     const resultElement = document.querySelector('#valid');
 
     let postObj = {
-        "tlf" : e.target.elements.tlf.value,
+        "name" : e.target.elements.name.value,
         "email" : e.target.elements.email.value,
         "message" : e.target.elements.message.value
     } 
 
-fetch('https://modelin.webmcdm.dk/contacts', {
+fetch('https://smuknu.webmcdm.dk/subscribe', {
     method: 'POST',
-    body: JSON.stringify(postObj),
+    body: JSON.stringify(postObj)({
+        "name" : "Teacher Man",
+        "email" : "teacherman@medieskolerne.dk",
+        "message": ""
+    })
+    ,
     headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json;charset=UTF-8'
