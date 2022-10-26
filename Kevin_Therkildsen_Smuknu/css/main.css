@@ -247,7 +247,7 @@ li {
     display: none;
   }
 }
-@media only screen and (max-width: 728px) {
+@media only screen and (max-width: 727px) {
   .medlem-imgs {
     display: none;
   }

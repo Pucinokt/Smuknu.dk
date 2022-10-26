@@ -1,15 +1,15 @@
 // 7-1 Sass Architecture bliver brugt her
 
-// abstracts
+// vaerktoejer
 @import "abstracts/mixins";
-@import "abstracts/variables";
+@import "abstracts/variabler";
 
-// base
+// global
 @import "base/base";
-@import "base/typography";
+@import "base/typografi";
 
-// components
-@import "components/button";
+// konponenter
+@import "komponenter/button";
 
 // layout
 @import "layout/footer";
@@ -17,8 +17,8 @@
 @import "layout/bliv_medlem";
 @import "layout/featured_products";
 
-// pages
-@import "pages/sundhed";
-@import "pages/medlem";
-@import "pages/produkter";
-@import "pages/home";
+// sider
+@import "sider/sundhed";
+@import "sider/medlem";
+@import "sider/produkter";
+@import "sider/forside";

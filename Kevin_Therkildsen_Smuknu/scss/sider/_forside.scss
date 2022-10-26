@@ -1,0 +1,151 @@
+/* ------------ Home Hero Start ---------- */
+.hero{
+    background-image: url(/Kevin_Therkildsen_Smuknu/assets/headers/front.jpg);
+    height: 700px;
+    @include cover-background;
+    @include flex-center;
+
+    .hero-wrap{
+        margin-top: 100px;
+        height: auto;
+        background-color: #F7F0F2;
+        padding: 60px;
+        font-family:$font;
+        text-align: center;
+
+        h1{
+            font-size: 54px;
+            font-weight: 700;
+        }
+
+        p{
+            font-size: 16px;
+            line-height: 23px;
+            padding: 20px;
+        } 
+        
+    }
+}
+/* ------------ Home Hero Media Queries Start ---------- */
+@media (min-width: 1024px) {
+    .hero-wrap{
+        position: absolute;
+        left: 30px;
+    }  
+}
+/* ------------ Home Hero Media Queries End ---------- */
+/* ------------ Home Hero End ---------- */
+
+
+/* ------------ Reviews Start ---------- */
+.Featured-Reviews{
+        text-align: center;
+        font-family: $font;
+        color: #707070;
+        margin: 60px 30px;
+    img{
+        border: 10px solid #FA96AA;
+        border-radius: 75px;
+        width: 150px;
+        height: 150px;
+        margin: 57px;
+    }
+    h1{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    p{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    hr{
+        margin-top: 30px;
+        color: $primary-color;
+    }
+}
+
+
+.r-line{
+        margin: -30px 30px 30px 30px;
+        color: $primary-color;
+}
+
+
+.wrap-Reviews{
+    text-align: center;
+    margin-top: 60px;
+    h1{
+        font-size: $title;
+        font-family: $font;
+        color: $secondary-color;
+    }
+    p{
+        font-size: $title;
+        font-family: $font;
+        color: $primary-color;
+        font-weight: 700;
+    }
+    img{
+        border: 10px solid #FA96AA;
+        border-radius: 75px;
+    }
+}
+
+/* ------------ Reviews Media Queries Start ---------- */
+@media only screen and (min-width: 728px) and (max-width: 1024px) {
+// reviews1
+    .review1{
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+
+    }
+    .review-heading{
+        position: absolute;
+        left: 90px;
+        align-self: flex-end;
+    }
+    .review-txt{
+        text-align: left;
+        margin-top: 40px;
+    }
+    
+// reviews2
+    .review2{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 30px;
+    }
+    .review-heading-2{
+        position: absolute;
+        right: 70px;
+        align-self: flex-end;
+    }
+    .review-txt-2{
+        text-align: left;
+        margin-top: 40px;
+    }
+
+
+.Featured-Reviews{
+    .wrap-Reviews{
+            h1{
+              font-size: 65px;
+              color:$primary-color ;
+            }
+            p{
+              color: $secondary-color;
+              font-size: 65px;
+    
+            }
+        }
+    }
+        .r-line,hr{
+        display: none;
+        }  
+}
+/* ------------ Reviews Media Queries End ---------- */
+/* ------------ Reviews End ---------- */
+
+
+

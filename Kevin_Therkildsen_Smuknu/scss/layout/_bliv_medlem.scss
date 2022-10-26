@@ -36,12 +36,14 @@
 
 
 /* ------------ Media Queries Start ---------- */
+// alt over 1024px bliver  vist
 @media only screen and  (min-width: 1024px) {
     .medlem-imgs{
         display: none;
     }
 }
-@media only screen and (max-width: 728px ) {
+// alt under 727px bliver ikke vist
+@media only screen and (max-width: 727px ) {
     .medlem-imgs{
         display: none;
     }
