@@ -1,0 +1,16 @@
+/* ------------ Scrollbar Start ---------- */
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(250,150,170);
+    background: linear-gradient(337deg, rgba(250,150,170,1) 27%, rgb(253, 195, 211) 100%);
+}
+/* ------------ Scrollbar End ---------- */

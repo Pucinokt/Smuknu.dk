@@ -9,6 +9,7 @@ body {
   overflow-x: hidden;
 }
 
+/* ------------ btn Start ---------- */
 .btn {
   width: 320px;
   height: 60px;
@@ -26,7 +27,8 @@ body {
   cursor: pointer;
 }
 
-/* Scrollbar End */
+/* ------------ btn End ---------- */
+/* ------------ Scrollbar Start ---------- */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -37,12 +39,11 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 10px;
   background: rgb(250, 150, 170);
   background: linear-gradient(337deg, rgb(250, 150, 170) 27%, rgb(253, 195, 211) 100%);
 }
 
-/* Scrollbar Start */
+/* ------------ Scrollbar End ---------- */
 /* ------------ Footer Start ---------- */
 .footer {
   width: 100%;
@@ -700,6 +701,7 @@ input, textarea {
   .hero-wrap {
     position: absolute;
     left: 30px;
+    padding: 60px;
   }
 }
 /* ------------ Home Hero Media Queries End ---------- */
@@ -799,4 +801,4 @@ input, textarea {
   }
 }
 /* ------------ Reviews Media Queries End ---------- */
-/* ------------ Reviews End ---------- *//*# sourceMappingURL=main.css.map */
+/* ------------ Reviews End ---------- *//*# sourceMappingURL=design.css.map */
