@@ -25,6 +25,7 @@ body {
 
 .btn:hover {
   cursor: pointer;
+  background-color: #DA91A4;
 }
 
 /* ------------ btn End ---------- */
@@ -153,6 +154,9 @@ a {
 }
 a:hover {
   color: #FA96AA;
+  -webkit-text-decoration: underline 2px solid;
+          text-decoration: underline 2px solid;
+  text-underline-offset: 6px;
 }
 
 ul {
@@ -172,8 +176,13 @@ li {
   display: none;
 }
 
+.nav__link.active, .nav__link:hover {
+  border: 1px solid #ff4b4c;
+  color: #ff4b4c;
+}
+
 /* ------------  Media Queries Start ---------- */
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   #burger {
     box-sizing: initial;
     display: block;
@@ -375,10 +384,30 @@ li {
   margin-top: 100px;
   height: auto;
   background-color: #FA96AA;
-  padding: 30px;
+  padding: 60px 30px;
   font-family: "Quicksand", sans-serif;
   text-align: center;
   color: #fff;
+  -webkit-animation: fadeup 1s ease-in-out;
+          animation: fadeup 1s ease-in-out;
+}
+@-webkit-keyframes fadeup {
+  from {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeup {
+  from {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  to {
+    opacity: 1;
+  }
 }
 .Sundhed .Sundhed-wrap h1 {
   font-size: 54px;
@@ -395,6 +424,7 @@ li {
   .Sundhed-wrap {
     position: absolute;
     left: 30px;
+    padding: 60px 60px !important;
   }
 }
 /* ------------ Sundhed Hero Media Queries End ---------- */
@@ -451,6 +481,7 @@ li {
 }
 
 /* ------------ Accordions End ---------- */
+/* ------------ Medlem Hero section Start ---------- */
 .Bliv-Medlem {
   background-image: url(/Kevin_Therkildsen_Smuknu/assets/headers/subscribers.jpg);
   height: 700px;
@@ -466,10 +497,21 @@ li {
   margin-top: 100px;
   height: auto;
   background-color: #fff;
-  padding: 30px;
+  padding: 60px 30px;
   font-family: "Quicksand", sans-serif;
   text-align: center;
   color: #FA96AA;
+  -webkit-animation: fadeup 1s ease-in-out;
+          animation: fadeup 1s ease-in-out;
+}
+@keyframes fadeup {
+  from {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  to {
+    opacity: 1;
+  }
 }
 .Bliv-Medlem .Bliv-Medlem-wrap h1 {
   font-size: 54px;
@@ -482,66 +524,55 @@ li {
   color: #000;
 }
 
+/* ------------ Hero Media Queries Start ---------- */
 @media (min-width: 1024px) {
   .Bliv-Medlem-wrap {
     position: absolute;
     left: 30px;
+    padding: 60px 60px !important;
   }
 }
-.contact-section {
-  margin: 75px 30px;
-  text-align: center;
-  font-family: "Quicksand", sans-serif;
-  height: auto;
-}
-.contact-section h1 {
-  font-size: 45px;
-  line-height: 53px;
-  font-weight: 400;
-  padding-bottom: 30px;
-}
-.contact-section p {
-  line-height: 22px;
-}
-
-.contact-container {
+/* ------------ Hero Media Queries End ---------- */
+/* ------------ Medlem Hero section End ---------- */
+/* ------------ Medlem section Start ---------- */
+#medlem-container {
   height: auto;
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
   margin-top: 30px;
 }
 
-.contact-txt {
+.medlem-txt {
   display: flex;
   justify-content: space-between;
   justify-content: center;
   margin: auto;
   padding-bottom: 70px;
 }
-.contact-txt h1 {
+.medlem-txt h1 {
   font-size: 20px;
   color: #707070;
   font-weight: 400;
   padding: 27px 0 10px 0;
 }
 
-.contact-box {
+.medlem-box {
   width: 90%;
   display: flex;
   flex-direction: column;
 }
 
-.contact-field-1 {
+.field-1 {
   border: 1px solid #707070;
   height: 40px;
 }
 
-.contact-field-2 {
+.field-2 {
   border: 1px solid #707070;
   height: 40px;
 }
 
-.contact-field-3 {
+.field-3 {
   border: 1px solid #707070;
   height: 219px;
 }
@@ -553,21 +584,7 @@ input, textarea {
   padding: 10px;
 }
 
-#valid {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: absolute;
-  font-family: "Quicksand", sans-serif;
-  color: white;
-  height: 635px;
-  width: 50%;
-  left: 0;
-  background-color: #F7F0F2;
-}
-
-#Contact-btn {
+#opret-btn {
   margin-top: 30px;
   width: 133px;
   height: 40px;
@@ -579,14 +596,28 @@ input, textarea {
   font-size: 18px;
   font-weight: 700;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
-}
-
-#Contact-btn:hover {
   cursor: pointer;
 }
 
+#opret-btn:hover {
+  background-color: #DA91A4;
+}
+
+.besked {
+  margin: 10px 0 40px 0;
+}
+
+.remove-me {
+  display: none;
+}
+
+.prov-igen {
+  background-color: none;
+}
+
+/* ------------ Media Queries Medlem section Start ---------- */
 @media (min-width: 1024px) {
-  .contact-box {
+  .medlem-box {
     width: 50%;
   }
   #valid {
@@ -598,8 +629,25 @@ input, textarea {
     width: 100%;
   }
 }
+/* ------------ Media Queries Medlem section End ---------- */
+/* ------------ Medlem section End ---------- */
+/* ------------ Valid section Start ---------- */
+#valid {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  height: 635px;
+  width: 100%;
+  left: 0;
+  background-color: #F7F0F2;
+}
+
 .Valid-wrap {
-  transform: translateY(-6%);
+  transform: translateY(-4%);
   text-align: center;
   background-color: #f7f0f2;
 }
@@ -608,6 +656,14 @@ input, textarea {
   font-family: "Quicksand", sans-serif;
   color: #000;
   font-weight: 700;
+}
+.Valid-wrap h3 {
+  color: #000;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+.Valid-wrap h3:hover {
+  color: #FA96AA;
 }
 .Valid-wrap .nyt-medlem {
   font-size: 18px;
@@ -628,6 +684,7 @@ input, textarea {
   height: 150px;
 }
 
+/* ------------ Valid section End ---------- */
 /* ------------ Products Hero Start ---------- */
 .Produkter {
   background-image: url(/Kevin_Therkildsen_Smuknu/assets/headers/products.jpg);
@@ -644,9 +701,20 @@ input, textarea {
   color: #fff;
   height: auto;
   background-color: rgba(0, 0, 0, 0.8);
-  padding: 60px;
+  padding: 60px 30px;
   font-family: "Quicksand", sans-serif;
   text-align: center;
+  -webkit-animation: fadeup 1s ease-in-out;
+          animation: fadeup 1s ease-in-out;
+}
+@keyframes fadeup {
+  from {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  to {
+    opacity: 1;
+  }
 }
 .Produkter .Produkter-wrap h1 {
   font-size: 54px;
@@ -663,6 +731,7 @@ input, textarea {
   .Produkter-wrap {
     position: absolute;
     left: 30px;
+    padding: 60px 60px !important;
   }
 }
 /* ------------ Products Hero Media Queries End ---------- */
@@ -681,27 +750,38 @@ input, textarea {
 .hero .hero-wrap {
   margin-top: 100px;
   height: auto;
+  padding: 60px 30px;
   background-color: #F7F0F2;
-  padding: 60px;
   font-family: "Quicksand", sans-serif;
   text-align: center;
+  -webkit-animation: fadeup 1s ease-in-out;
+          animation: fadeup 1s ease-in-out;
+}
+@keyframes fadeup {
+  from {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  to {
+    opacity: 1;
+  }
 }
 .hero .hero-wrap h1 {
   font-size: 54px;
   font-weight: 700;
 }
 .hero .hero-wrap p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 23px;
   padding: 20px;
 }
 
 /* ------------ Home Hero Media Queries Start ---------- */
-@media (min-width: 1024px) {
+@media (min-width: 1023px) {
   .hero-wrap {
     position: absolute;
     left: 30px;
-    padding: 60px;
+    padding: 60px 60px !important;
   }
 }
 /* ------------ Home Hero Media Queries End ---------- */
@@ -729,13 +809,15 @@ input, textarea {
   font-weight: 400;
 }
 .Featured-Reviews hr {
+  border: 1px solid #FA96AA;
+  background-color: #FA96AA;
   margin-top: 30px;
-  color: #FA96AA;
 }
 
 .r-line {
   margin: -30px 30px 30px 30px;
-  color: #FA96AA;
+  border: 1px solid #FA96AA;
+  background-color: #FA96AA;
 }
 
 .wrap-Reviews {
@@ -759,7 +841,7 @@ input, textarea {
 }
 
 /* ------------ Reviews Media Queries Start ---------- */
-@media only screen and (min-width: 728px) and (max-width: 1024px) {
+@media only screen and (min-width: 728px) and (max-width: 1023px) {
   .review1 {
     display: flex;
     flex-direction: row;

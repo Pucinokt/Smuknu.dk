@@ -48,6 +48,8 @@ a {
 	text-decoration: none;
 	&:hover {
 		color: $primary-color;
+		text-decoration: underline 2px solid;
+   		text-underline-offset: 6px;
 	}
 
 	
@@ -68,10 +70,12 @@ li {
 #burger, .icon{
 	display: none;
 }
-
-
+.nav__link.active, .nav__link:hover {
+	border: 1px solid #ff4b4c;
+	color: #ff4b4c;
+  }
 /* ------------  Media Queries Start ---------- */
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
 	#burger {
 		box-sizing: initial;
 		display: block;

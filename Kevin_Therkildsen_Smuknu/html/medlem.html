@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/design.css">
     <link rel="icon" type="image/x-icon" href="/Kevin_Therkildsen_Smuknu/assets/logo/smuknu_fav.ico">
     <title>Smuknu - Bliv medlem</title>
 </head>
@@ -26,41 +26,44 @@
 </section>
 <!----------------  Hero End  ---------------->
 
-<!----------------  Contact Start  ---------------->
-<form class="contact-container">
-  <div class="contact-txt">
-      <div class="contact-box">
-        <h1>Fulde navn</h1>
-          <input class="text contact-field-1"  type="text" name="name" 
-                 required>
-                  <h1>E-mail</h1>
+<!----------------  Medlem Start  ---------------->
+<section id="medlem-container">
+  <div class="medlem-txt">
+      <form class="medlem-box">
 
-          <input class="email contact-field-2"  type="email" name="email" 
-                 required>
-                  <h1>Ris og/eller ros</h1>
-                  
-          <textarea class="message contact-field-3" type="text" name="message" cols="50" rows="8"></textarea>
-          <button id="Contact-btn" onclick="timer(); remove()" value="submit" type="submit">Opret</button>
+          <h1>Fulde navn</h1>
+          <input class="text field-1"  type="text" name="name" 
+          required>
 
-          <!-- Valid Start -->
-          <div id="valid">
-            <section class="Valid-section">
-              <div class="Valid-wrap">
-                <h1>TAK!</h1>
-                  <h1 class="nyt-medlem">Birthe Marie Hansen</h1>
-                    <p>Vi er enormt glade for at få dig som medlem.</p>
-                    <img src="/Kevin_Therkildsen_Smuknu/assets/products/product_2233009200.jpg" alt="">
-                    <p>Kig I din inbox vi har sendt en lille velkomst gave.</p>
-                    <a href="index.html"><button class="btn">Til Forsiden</button></a>
-              </div>
-            </section>
-          </div>
+          <h1>E-mail</h1>
+          <input class="email field-2"  type="email" name="email" 
+          required>
+
+          <h1>Ris og/eller ros</h1>
+          <textarea class="message field-3" type="text" name="message" cols="50" rows="8"></textarea>
+          <button id="opret-btn" value="submit" type="submit">Opret</button>
+
           <!-- Valid End -->
-          
+        </form>
+        <!-- Valid Start -->
+        <div id="valid">
+          <section class="Valid-section">
+            <div class="Valid-wrap">
+              <h1 class="headline-valid">TAK!</h1>
+                <h1 class="nyt-medlem">Birthe Marie Hansen</h1>
+                  <p class="removes">Vi er enormt glade for at få dig som medlem.</p>
+                  <img class="removes" src="/Kevin_Therkildsen_Smuknu/assets/products/product_8281992819.jpg" alt="">
+                  <p class="removes">Kig I din inbox vi har sendt en lille velkomst gave.</p>
+                  <a href="index.html"><button class="btn">Til Forsiden</button></a>
+                  <br>
+                  <br>
+                  <a href="medlem.html"><h3 onclick="retry()">Prøv igen</h3></a>
+                </div>
+          </section>
+        </div>
       </div>
-  </div>
-</form>
-<!---------------- Contact End  ---------------->
+    </section>
+<!---------------- Medlem End  ---------------->
 
 <!----------------  Footer Start  ---------------->
 <div id="footer"></div>

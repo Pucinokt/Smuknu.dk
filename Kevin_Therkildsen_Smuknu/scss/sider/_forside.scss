@@ -8,18 +8,29 @@
     .hero-wrap{
         margin-top: 100px;
         height: auto;
+        padding: 60px 30px;
         background-color: #F7F0F2;
-        padding: 60px;
         font-family:$font;
         text-align: center;
+        animation: fadeup 1s ease-in-out;
 
+        @keyframes fadeup {
+            from{
+                opacity: 0;
+                transform: translateY(30%);
+            }
+            to{
+                opacity: 1;
+            } 
+        }
+        
         h1{
-            font-size: 54px;
+            font-size: $title;
             font-weight: 700;
         }
 
         p{
-            font-size: 16px;
+            font-size: $bodytext;
             line-height: 23px;
             padding: 20px;
         } 
@@ -27,11 +38,11 @@
     }
 }
 /* ------------ Home Hero Media Queries Start ---------- */
-@media (min-width: 1024px) {
+@media (min-width: 1023px) {
     .hero-wrap{
         position: absolute;
         left: 30px;
-        padding: 60px;
+        padding: 60px 60px !important;
     }  
 }
 /* ------------ Home Hero Media Queries End ---------- */
@@ -60,15 +71,18 @@
         font-weight: 400;
     }
     hr{
+        border: 1px solid #FA96AA;
+        background-color: #FA96AA;
         margin-top: 30px;
-        color: $primary-color;
     }
 }
 
 
+
 .r-line{
         margin: -30px 30px 30px 30px;
-        color: $primary-color;
+        border: 1px solid #FA96AA;
+        background-color: #FA96AA;
 }
 
 
@@ -93,7 +107,7 @@
 }
 
 /* ------------ Reviews Media Queries Start ---------- */
-@media only screen and (min-width: 728px) and (max-width: 1024px) {
+@media only screen and (min-width: 728px) and (max-width: 1023px) {
 // reviews1
     .review1{
         display: flex;
@@ -132,7 +146,7 @@
     .wrap-Reviews{
             h1{
               font-size: 65px;
-              color:$primary-color ;
+              color:$primary-color;
             }
             p{
               color: $secondary-color;

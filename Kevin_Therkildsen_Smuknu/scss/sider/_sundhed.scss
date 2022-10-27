@@ -8,10 +8,22 @@
         margin-top: 100px;
         height: auto;
         background-color: $primary-color;
-        padding: 30px;
+        padding: 60px 30px;
         font-family:$font;
         text-align: center;
         color: $background;
+        animation: fadeup 1s ease-in-out;
+
+        @keyframes fadeup {
+            from{
+                opacity: 0;
+                transform: translateY(30%);
+            }
+            to{
+                opacity: 1;
+            } 
+        }
+        
         h1{
             font-size: $title;
             font-weight: 700;
@@ -28,6 +40,8 @@
     .Sundhed-wrap{
         position: absolute;
         left: 30px;
+        padding: 60px 60px !important;
+
     }
 }
 /* ------------ Sundhed Hero Media Queries End ---------- */
